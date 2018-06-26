@@ -1,4 +1,4 @@
-package repository;
+package repository.impl;
 
 import model.User;
 import org.hibernate.Session;
@@ -6,17 +6,16 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import repository.impl.UserRepositoryImpl;
+import repository.UserRepositoryImpl;
 
 import java.util.List;
 
 @Repository
 @Transactional
-
 public class UserRepository implements UserRepositoryImpl {
+
     @Autowired
     SessionFactory sessionFactory;
-
 
     @Override
     public void removeUser(int id) {
