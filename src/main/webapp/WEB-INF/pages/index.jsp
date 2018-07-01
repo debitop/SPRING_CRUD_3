@@ -26,16 +26,16 @@
         <tr>
             <td><c:out value="${user.id}"></c:out></td>
             <td><c:out value="${user.name}"></c:out></td>
-            <td><c:if test="${user.isadmin}==true">+</c:if></td>
-            <td><c:out value="${user.createdate}"></c:out></td>
-            <td><a href="updateUser?id=${user.id}">Update</a></td>
-            <td><a href="deleteUser?id=${user.id}">Delete</a></td>
+            <td><c:if test="${user.admin==true}">+</c:if></td>
+            <td><c:out value="${user.createDate}"></c:out></td>
+            <td><a href="updateUser/${user.id}">Update</a></td>
+            <td><a href="deleteUser/${user.id}">Delete</a></td>
         </tr>
 
     </c:forEach>
-    <tr><a href="createUser">CreateUser</a></tr>
-</table>
 
+</table>
+<tr><a href="/addUser">CreateUser</a></tr>
 
 </body>
 </html>

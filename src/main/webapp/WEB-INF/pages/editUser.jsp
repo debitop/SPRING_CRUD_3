@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: Саша
@@ -11,6 +12,23 @@
     <title>Title</title>
 </head>
 <body>
+<a href="/">Home</a>
+<form:form method="post" action="/updateUser/${userAttribute.id}" modelAttribute="userAttribute">
+    <table>
+    <tr>
+    <td><form:label path="id">Id:</form:label></td>
+    <td><form:input path="id" disabled="true"></td>
+    </tr>
+    <tr>
+    <td><form:label path="name">Name:</form:label></td>
+    <td><form:input path="name"></form:input></td>
+    </tr>
+    <tr>
+    <td><form:checkbox path="isadmin">Is admin?</td>
+        </tr>
+        </table>
+        <input type="submit" value="save">
+        </form:>
 
-</body>
-</html>
+        </body>
+        </html>

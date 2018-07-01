@@ -67,8 +67,8 @@
     <schema id="14" parent="2" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-06-18.21:35:54.357</IntrospectionTimestamp>
-      <IntrospectionStateNumber>607</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-07-01.13:00:55.391</IntrospectionTimestamp>
+      <IntrospectionStateNumber>617</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -115,8 +115,8 @@
       <Type>index</Type>
     </access-method>
     <sequence id="21" parent="14" name="global_seq">
-      <ObjectId>16487</ObjectId>
-      <StateNumber>606</StateNumber>
+      <ObjectId>16506</ObjectId>
+      <StateNumber>616</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
@@ -144,8 +144,8 @@
       <StateNumber>569</StateNumber>
     </table>
     <table id="26" parent="14" name="users">
-      <ObjectId>16489</ObjectId>
-      <StateNumber>607</StateNumber>
+      <ObjectId>16508</ObjectId>
+      <StateNumber>617</StateNumber>
     </table>
     <column id="27" parent="24" name="id">
       <Position>1</Position>
@@ -247,7 +247,7 @@
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>607</StateNumber>
+      <StateNumber>617</StateNumber>
       <DefaultExpression>nextval(&apos;global_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
@@ -255,29 +255,29 @@
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>607</StateNumber>
+      <StateNumber>617</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="43" parent="26" name="isadmin">
       <Position>3</Position>
       <DataType>boolean|0s</DataType>
-      <StateNumber>607</StateNumber>
+      <StateNumber>617</StateNumber>
       <TypeId>16</TypeId>
     </column>
     <column id="44" parent="26" name="createdate">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>607</StateNumber>
+      <StateNumber>617</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <index id="45" parent="26" name="users_pkey">
-      <ObjectId>16496</ObjectId>
+      <ObjectId>16515</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="46" parent="26" name="users_pkey">
-      <ObjectId>16497</ObjectId>
+      <ObjectId>16516</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>

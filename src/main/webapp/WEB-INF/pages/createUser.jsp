@@ -12,5 +12,18 @@
 </head>
 <body>
 
+<form method="post" action="/addUser">
+    <table border="1" cellspacing="1" cellpadding="1">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" value="" name="name"></td>
+        </tr>
+        <tr>
+            <td>isAdmin</td>
+            <td><input type="checkbox" name="isadmin"></td>
+        </tr>
+    </table>
+    <input type="submit" name="OK">
+</form>
 </body>
 </html>
